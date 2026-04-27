@@ -13,7 +13,7 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
-        String appPath = "/Users/shreyasharma/Downloads/App Automation Playground-debug-nml.app";
+        String appPath = System.getenv("APP_PATH");
         String apiKey = System.getenv("APPLITOOLS_API_KEY");
 
         if (appPath == null || apiKey == null) {
